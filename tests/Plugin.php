@@ -1,5 +1,3 @@
 <?php
 
-it('adds the trait globally', function () {
-    assertMatchesSnapshot('Freek');
-});
+it('adds the trait globally')->assertMatchesSnapshot('Random string');
