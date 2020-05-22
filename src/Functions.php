@@ -6,12 +6,6 @@ use Spatie\Snapshots\MatchesSnapshots;
 Pest\Plugin::uses(MatchesSnapshots::class);
 
 if (! function_exists('assertMatchesSnapshot')) {
-
-    /**
-     * Assert that the given value matches the stored snapshot.
-     *
-     * @param mixed $actual
-     */
     function assertMatchesSnapshot($actual, Driver $driver = null): void
     {
         test()->assertMatchesSnapshot($actual, $driver);
@@ -19,10 +13,6 @@ if (! function_exists('assertMatchesSnapshot')) {
 }
 
 if (! function_exists('assertMatchesFileHashSnapshot')) {
-
-    /**
-     * Assert that the given value matches the stored file hash snapshot.
-     */
     function assertMatchesFileHashSnapshot(string $filePath): void
     {
         test()->assertMatchesFileHashSnapshot($filePath);
@@ -30,10 +20,6 @@ if (! function_exists('assertMatchesFileHashSnapshot')) {
 }
 
 if (! function_exists('assertMatchesFileSnapshot')) {
-
-    /**
-     * Assert that the given value matches the stored file snapshot.
-     */
     function assertMatchesFileSnapshot(string $file): void
     {
         test()->assertMatchesFileSnapshot($file);
