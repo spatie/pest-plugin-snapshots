@@ -16,7 +16,7 @@ trait SnapshotDirectoryAware
         return implode(DIRECTORY_SEPARATOR, [
             TestSuite::getInstance()->rootPath,
             'tests',
-            '__snapshots__'
+            '__snapshots__',
         ]);
     }
 }
