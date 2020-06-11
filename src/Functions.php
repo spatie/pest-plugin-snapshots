@@ -1,69 +1,52 @@
 <?php
 
-use Spatie\Snapshots\Driver;
-use Spatie\Snapshots\MatchesSnapshots;
+namespace Spatie\Snapshots;
 
-Pest\Plugin::uses(MatchesSnapshots::class);
+use Pest\Plugin;
 
-if (! function_exists('assertMatchesSnapshot')) {
-    function assertMatchesSnapshot($actual, Driver $driver = null): void
-    {
-        test()->assertMatchesSnapshot($actual, $driver);
-    }
+Plugin::uses(MatchesSnapshots::class);
+
+function assertMatchesSnapshot($actual, Driver $driver = null): void
+{
+    test()->assertMatchesSnapshot(...func_get_args());
 }
 
-if (! function_exists('assertMatchesFileHashSnapshot')) {
-    function assertMatchesFileHashSnapshot(string $filePath): void
-    {
-        test()->assertMatchesFileHashSnapshot($filePath);
-    }
+function assertMatchesFileHashSnapshot(string $filePath): void
+{
+    test()->assertMatchesFileHashSnapshot($filePath);
 }
 
-if (! function_exists('assertMatchesFileSnapshot')) {
-    function assertMatchesFileSnapshot(string $file): void
-    {
-        test()->assertMatchesFileSnapshot($file);
-    }
+function assertMatchesFileSnapshot(string $file): void
+{
+    test()->assertMatchesFileSnapshot($file);
 }
 
-if (! function_exists('assertMatchesHtmlSnapshot')) {
-    function assertMatchesHtmlSnapshot(string $actual): void
-    {
-        test()->assertMatchesHtmlSnapshot($actual);
-    }
+function assertMatchesHtmlSnapshot(string $actual): void
+{
+    test()->assertMatchesHtmlSnapshot($actual);
 }
 
-if (! function_exists('assertMatchesJsonSnapshot')) {
-    function assertMatchesJsonSnapshot(string $actual): void
-    {
-        test()->assertMatchesJsonSnapshot($actual);
-    }
+function assertMatchesJsonSnapshot(string $actual): void
+{
+    test()->assertMatchesJsonSnapshot($actual);
 }
 
-if (! function_exists('assertMatchesObjectSnapshot')) {
-    function assertMatchesObjectSnapshot(object $actual): void
-    {
-        test()->assertMatchesObjectSnapshot($actual);
-    }
+function assertMatchesObjectSnapshot(object $actual): void
+{
+    test()->assertMatchesObjectSnapshot($actual);
 }
 
-if (! function_exists('assertMatchesTextSnapshot')) {
-    function assertMatchesTextSnapshot(string $actual): void
-    {
-        test()->assertMatchesTextSnapshot($actual);
-    }
+function assertMatchesTextSnapshot(string $actual): void
+{
+    test()->assertMatchesTextSnapshot($actual);
 }
 
-if (! function_exists('assertMatchesXmlSnapshot')) {
-    function assertMatchesXmlSnapshot(string $actual): void
-    {
-        test()->assertMatchesXmlSnapshot($actual);
-    }
+function assertMatchesXmlSnapshot(string $actual): void
+{
+    test()->assertMatchesXmlSnapshot($actual);
 }
 
-if (! function_exists('assertMatchesYamlSnapshot')) {
-    function assertMatchesYamlSnapshot(string $actual): void
-    {
-        test()->assertMatchesYamlSnapshot($actual);
-    }
+function assertMatchesYamlSnapshot(string $actual): void
+{
+    test()->assertMatchesYamlSnapshot($actual);
 }
