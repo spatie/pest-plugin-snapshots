@@ -29,6 +29,8 @@ composer require spatie/pest-plugin-snapshots --dev
 ## Usage
 
 ```php
+use function Spatie\Snapshots\{assertMatchesSnapshot, assertMatchesJsonSnapshot};
+
 it('can be cast to string', function () {
     $order = new Order(1);
 
