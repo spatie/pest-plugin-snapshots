@@ -6,7 +6,7 @@
 
 This package adds snapshot testing capabilities to **[Pest](https://pestphp.com)**. It wraps
 our [phpunit-snapshot-assertions](https://github.com/spatie/phpunit-snapshot-assertions) package making
-snapshot assertions globally available in Pest tests.
+snapshot assertions available in Pest tests.
 
 ## Support us
 
