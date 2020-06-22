@@ -11,19 +11,25 @@
     "license": "MIT",
     "require": {
         "php": "^7.4",
-        "pestphp/pest": "^0.2",
+        "pestphp/pest": "dev-master",
         "spatie/phpunit-snapshot-assertions": "^4.2.2"
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Snapshots\\Concerns\\": "./src/Concerns/"
+            "Spatie\\Snapshots\\Concerns\\": "./src/Concerns/",
+            "Spatie\\Snapshots\\Laravel\\": "./src/Laravel/"
         },
         "files": [
             "src/Functions.php"
         ]
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.16.3"
+        "friendsofphp/php-cs-fixer": "^2.16.3",
+        "illuminate/support": "^7.0",
+        "illuminate/testing": "^7.0",
+        "orchestra/testbench": "^5.0",
+        "pestphp/pest-plugin-laravel": "^0.2",
+        "fzaninotto/faker": "^1.9"
     },
     "scripts": {
         "test": "pest",
@@ -34,5 +40,12 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spatie\\Snapshots\\Laravel\\SnapshotsServiceProvider"
+            ]
+        }
+    }
 }
