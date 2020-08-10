@@ -1,7 +1,7 @@
 <?php
 
 it('autoloads function', function ($name) {
-    assertTrue(function_exists("\\Spatie\\Snapshots\\$name"));
+    expect(function_exists("\\Spatie\\Snapshots\\$name"))->toBeTrue();
 })->with([
     'assertMatchesSnapshot',
     'assertMatchesFileHashSnapshot',
