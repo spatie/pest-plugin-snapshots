@@ -9,5 +9,5 @@ assertMatchesSnapshot('pending higher order tests');
 test('closure tests', function () {
     assertMatchesSnapshot('closure tests');
 
-    assertFileExists(__DIR__ . DIRECTORY_SEPARATOR . '__snapshots__');
+    expect(__DIR__ . DIRECTORY_SEPARATOR . '__snapshots__')->toBeDirectory();
 });
