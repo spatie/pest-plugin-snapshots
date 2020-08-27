@@ -2,6 +2,10 @@
 
 All notable changes to `pest-plugin-snapshots` will be documented in this file
 
+## 0.3.0 - 2020-08-27
+
+- requires `pestphp/pest:^0.3`
+
 ## 0.2.0 - 2020-06-11
 
 - uses namespaced functions ([#4](https://github.com/spatie/pest-plugin-snapshots/pull/4))
