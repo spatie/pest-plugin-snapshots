@@ -20,6 +20,12 @@
         },
         "files": [
             "src/Functions.php"
+        ],
+        "exclude-from-classmap": [
+            "../phpunit-snapshot-assertions/src/Concerns/SnapshotDirectoryAware.php",
+            "../phpunit-snapshot-assertions/src/Concerns/SnapshotIdAware.php",
+            "vendor/spatie/phpunit-snapshot-assertions/src/Concerns/SnapshotDirectoryAware.php",
+            "vendor/spatie/phpunit-snapshot-assertions/src/Concerns/SnapshotIdAware.php"
         ]
     },
     "require-dev": {
