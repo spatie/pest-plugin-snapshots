@@ -2,6 +2,10 @@
 
 All notable changes to `pest-plugin-snapshots` will be documented in this file
 
+## 0.3.1 - 2020-10-01
+
+- exclude original concerns from classmap (#7)
+
 ## 0.3.0 - 2020-08-27
 
 - requires `pestphp/pest:^0.3`
