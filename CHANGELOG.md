@@ -2,6 +2,10 @@
 
 All notable changes to `pest-plugin-snapshots` will be documented in this file
 
+## 1.0.0 - 2021-01-03
+
+- stable version
+
 ## 0.3.1 - 2020-10-01
 
 - exclude original concerns from classmap (#7)
