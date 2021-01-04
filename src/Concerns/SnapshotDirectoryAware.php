@@ -13,9 +13,14 @@ trait SnapshotDirectoryAware
      */
     protected function getSnapshotDirectory(): string
     {
+        $dir = explode('Tests\\', static::class, 2)[1];
+
+        $dir = dirname(str_replace('\\', DIRECTORY_SEPARATOR, $dir));
+
         return implode(DIRECTORY_SEPARATOR, [
             TestSuite::getInstance()->rootPath,
             'tests',
+            $dir,
             '__snapshots__',
         ]);
     }
