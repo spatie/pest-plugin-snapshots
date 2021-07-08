@@ -2,6 +2,10 @@
 
 All notable changes to `pest-plugin-snapshots` will be documented in this file
 
+## 1.1.0 - 2021-07-08
+
+- support expectation API
+
 ## 1.0.1 - 2021-01-03
 
 - updates dependencies
