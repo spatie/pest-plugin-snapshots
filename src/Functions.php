@@ -2,7 +2,6 @@
 
 namespace Spatie\Snapshots;
 
-use Pest\Expectation;
 use Pest\Plugin;
 
 Plugin::uses(MatchesSnapshots::class);
@@ -52,55 +51,55 @@ function assertMatchesYamlSnapshot(string $actual): void
     test()->assertMatchesYamlSnapshot($actual);
 }
 
-expect()->extend('toMatchSnapshot', function() {
+expect()->extend('toMatchSnapshot', function () {
     test()->assertMatchesSnapshot($this->value);
 
     return $this;
 });
 
-expect()->extend('toMatchFileHashSnapshot', function() {
+expect()->extend('toMatchFileHashSnapshot', function () {
     test()->assertMatchesFileHashSnapshot($this->value);
 
     return $this;
 });
 
-expect()->extend('toMatchFileSnapshot', function() {
+expect()->extend('toMatchFileSnapshot', function () {
     test()->assertMatchesFileSnapshot($this->value);
 
     return $this;
 });
 
-expect()->extend('toMatchHtmlSnapshot', function() {
+expect()->extend('toMatchHtmlSnapshot', function () {
     test()->assertMatchesHtmlSnapshot($this->value);
 
     return $this;
 });
 
-expect()->extend('toMatchJsonSnapshot', function() {
+expect()->extend('toMatchJsonSnapshot', function () {
     test()->assertMatchesJsonSnapshot($this->value);
 
     return $this;
 });
 
-expect()->extend('toMatchObjectSnapshot', function() {
+expect()->extend('toMatchObjectSnapshot', function () {
     test()->assertMatchesObjectSnapshot($this->value);
 
     return $this;
 });
 
-expect()->extend('toMatchTextSnapshot', function() {
+expect()->extend('toMatchTextSnapshot', function () {
     test()->assertMatchesTextSnapshot($this->value);
 
     return $this;
 });
 
-expect()->extend('toMatchXmlSnapshot', function() {
+expect()->extend('toMatchXmlSnapshot', function () {
     test()->assertMatchesXmlSnapshot($this->value);
 
     return $this;
 });
 
-expect()->extend('toMatchYamlSnapshot', function() {
+expect()->extend('toMatchYamlSnapshot', function () {
     test()->assertMatchesYamlSnapshot($this->value);
 
     return $this;
