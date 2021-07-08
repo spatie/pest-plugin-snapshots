@@ -11,3 +11,7 @@ test('closure tests', function () {
 
     expect(__DIR__ . DIRECTORY_SEPARATOR . '__snapshots__')->toBeDirectory();
 });
+
+test('expectation test', function() {
+   expect(1)->toMatchSnapshot();
+});
