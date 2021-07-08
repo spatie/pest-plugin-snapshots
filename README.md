@@ -42,6 +42,16 @@ it('can be cast to json', function () {
 });
 ```
 
+You can also use an exception
+
+```php
+it('can be cast to string', function () {
+    $order = new Order(1);
+
+    expect($order->toString())->toMatchSnapshot();
+});
+```
+
 For the full list of assertions, please refer to underlying package: [phpunit-snapshot-assertions](https://github.com/spatie/phpunit-snapshot-assertions).
 
 ## Testing
