@@ -42,7 +42,7 @@ it('can be cast to json', function () {
 });
 ```
 
-You can also use an exception
+You can also use an expectation:
 
 ```php
 it('can be cast to string', function () {
