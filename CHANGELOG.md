@@ -2,6 +2,18 @@
 
 All notable changes to `pest-plugin-snapshots` will be documented in this file
 
+## 2.0.0 - 2023-02-09
+
+### What's Changed
+
+- v2 - update for Pest 2 by @freekmurze in https://github.com/spatie/pest-plugin-snapshots/pull/14
+
+### New Contributors
+
+- @freekmurze made their first contribution in https://github.com/spatie/pest-plugin-snapshots/pull/14
+
+**Full Changelog**: https://github.com/spatie/pest-plugin-snapshots/compare/1.1.0...2.0.0
+
 ## 1.1.0 - 2021-07-08
 
 - support expectation API
