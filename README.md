@@ -1,7 +1,7 @@
 # Snapshot Testing for Pest
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/pest-plugin-snapshots.svg?style=flat-square)](https://packagist.org/packages/spatie/pest-plugin-snapshots)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/pest-plugin-snapshots/run-tests?label=tests)](https://github.com/spatie/pest-plugin-snapshots/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![run-tests](https://github.com/spatie/pest-plugin-snapshots/actions/workflows/run-tests.yml/badge.svg)](https://github.com/spatie/pest-plugin-snapshots/actions/workflows/run-tests.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/pest-plugin-snapshots.svg?style=flat-square)](https://packagist.org/packages/spatie/pest-plugin-snapshots)
 
 This package adds snapshot testing capabilities to **[Pest](https://pestphp.com)**. It wraps
