@@ -13,7 +13,7 @@ trait SnapshotIdAware
     protected function getSnapshotId(): string
     {
         return (new ReflectionClass($this))->getShortName().'__'.
-            str_replace(' ', '_', $this->getName()).'__'.
+            str_replace(' ', '_', $this->name()).'__'.
             $this->snapshotIncrementor;
     }
 }

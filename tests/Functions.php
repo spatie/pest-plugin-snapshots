@@ -9,7 +9,7 @@ assertMatchesSnapshot('pending higher order tests');
 test('closure tests', function () {
     assertMatchesSnapshot('closure tests');
 
-    expect(__DIR__ . DIRECTORY_SEPARATOR . '__snapshots__')->toBeDirectory();
+    expect(__DIR__.DIRECTORY_SEPARATOR.'__snapshots__')->toBeDirectory();
 });
 
 test('expectation test', function () {
