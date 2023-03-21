@@ -2,8 +2,10 @@
 
 namespace Spatie\Snapshots\Concerns;
 
+use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 
+/** @mixin TestCase */
 trait SnapshotIdAware
 {
     /*
@@ -12,8 +14,11 @@ trait SnapshotIdAware
      */
     protected function getSnapshotId(): string
     {
-        return (new ReflectionClass($this))->getShortName().'__'.
-            str_replace(' ', '_', $this->name()).'__'.
-            $this->snapshotIncrementor;
+        return sprintf(
+            '%s__%s__%s',
+            (new ReflectionClass($this))->getShortName(),
+            str_replace(' ', '_', str_replace('__pest_evaluable_', '', $this->nameWithDataSet())),
+            $this->snapshotIncrementor
+        );
     }
 }
