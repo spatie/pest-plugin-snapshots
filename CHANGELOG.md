@@ -2,6 +2,10 @@
 
 All notable changes to `pest-plugin-snapshots` will be documented in this file
 
+## 2.1.0 - 2023-09-11
+
+- add support for image snapshots
+
 ## 2.0.0 - 2023-02-09
 
 ### What's Changed
