@@ -13,5 +13,5 @@ test('closure tests', function () {
 });
 
 test('expectation test', function () {
-    expect(1)->toMatchSnapshot();
+    expect('1')->toMatchSnapshot();
 });

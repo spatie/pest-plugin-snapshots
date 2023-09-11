@@ -51,6 +51,15 @@ function assertMatchesYamlSnapshot(string $actual): void
     test()->assertMatchesYamlSnapshot($actual);
 }
 
+function assertMatchesImageSnapshot(
+    $actual,
+    float $threshold = 0.1,
+    bool $includeAa = true
+)
+{
+    test()->assertMatchesImageSnapshot($actual, $threshold, $includeAa);
+}
+
 expect()->extend('toMatchSnapshot', function () {
     test()->assertMatchesSnapshot($this->value);
 
@@ -104,3 +113,13 @@ expect()->extend('toMatchYamlSnapshot', function () {
 
     return $this;
 });
+
+expect()->extend('toMatchImageSnapshot', function (
+    float $threshold = 0.1,
+    bool $includeAa = true
+) {
+    test()->assertMatchesImageSnapshot($this->value, $threshold, $includeAa);
+
+    return $this;
+});
+
