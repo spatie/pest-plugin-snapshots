@@ -55,8 +55,7 @@ function assertMatchesImageSnapshot(
     $actual,
     float $threshold = 0.1,
     bool $includeAa = true
-)
-{
+) {
     test()->assertMatchesImageSnapshot($actual, $threshold, $includeAa);
 }
 
@@ -122,4 +121,3 @@ expect()->extend('toMatchImageSnapshot', function (
 
     return $this;
 });
-
