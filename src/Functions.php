@@ -6,7 +6,7 @@ use Pest\Plugin;
 
 Plugin::uses(MatchesSnapshots::class);
 
-function assertMatchesSnapshot($actual, Driver $driver = null): void
+function assertMatchesSnapshot($actual, ?Driver $driver = null): void
 {
     test()->assertMatchesSnapshot(...func_get_args());
 }
