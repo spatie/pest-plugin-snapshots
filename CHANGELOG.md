@@ -2,6 +2,18 @@
 
 All notable changes to `pest-plugin-snapshots` will be documented in this file
 
+## 2.2.0 - 2024-09-20
+
+### What's Changed
+
+* Support PEST v3 by @onlime in https://github.com/spatie/pest-plugin-snapshots/pull/20
+
+### New Contributors
+
+* @onlime made their first contribution in https://github.com/spatie/pest-plugin-snapshots/pull/20
+
+**Full Changelog**: https://github.com/spatie/pest-plugin-snapshots/compare/2.1.0...2.2.0
+
 ## 2.1.0 - 2023-09-11
 
 - add support for image snapshots
