@@ -2,6 +2,13 @@
 
 All notable changes to `pest-plugin-snapshots` will be documented in this file
 
+## 2.3.0 - 2026-02-09
+
+### What's Changed
+
+* Support phpunit-snapshot-assertions 5.3.1 by syncing `SnapshotIdAware` trait with upstream changes
+* Bump minimum `spatie/phpunit-snapshot-assertions` to `^5.3.1`
+
 ## 2.2.1 - 2025-08-24
 
 **Full Changelog**: https://github.com/spatie/pest-plugin-snapshots/compare/2.2.0...2.2.1
