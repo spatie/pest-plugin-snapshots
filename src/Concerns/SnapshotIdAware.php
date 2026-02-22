@@ -27,7 +27,6 @@ trait SnapshotIdAware
         if ($id !== null) {
             $suffix = 's-'.$id;
         } else {
-            $this->snapshotIncrementor++;
             $suffix = $this->snapshotIncrementor;
         }
 
