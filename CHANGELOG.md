@@ -2,6 +2,14 @@
 
 All notable changes to `pest-plugin-snapshots` will be documented in this file
 
+## 2.3.1 - 2026-04-27
+
+### What's Changed
+
+* Fix duplicate Snapshost ID increment regression by @onlime in https://github.com/spatie/pest-plugin-snapshots/pull/23
+
+**Full Changelog**: https://github.com/spatie/pest-plugin-snapshots/compare/2.3.0...2.3.1
+
 ## 2.3.0 - 2026-02-09
 
 ### What's Changed
