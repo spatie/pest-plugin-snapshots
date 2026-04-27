@@ -10,7 +10,7 @@
     "homepage": "https://github.com/spatie/pest-plugin-snapshots",
     "license": "MIT",
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "pestphp/pest": "^2.0|^3.0|^4.0",
         "spatie/phpunit-snapshot-assertions": "^5.3.2"
     },
