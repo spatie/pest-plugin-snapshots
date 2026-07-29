@@ -2,6 +2,12 @@
 
 All notable changes to `pest-plugin-snapshots` will be documented in this file
 
+## 2.4.0 - 2026-07-29
+
+Add support for Pest 5.
+
+Pest 5 requires PHP 8.4, so the minimum PHP version is now 8.4. `spatie/phpunit-snapshot-assertions` is bumped to ^5.4.0 for PHPUnit 13 support.
+
 ## 2.3.1 - 2026-04-27
 
 ### What's Changed
