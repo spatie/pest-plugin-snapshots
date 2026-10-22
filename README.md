@@ -10,7 +10,7 @@ snapshot assertions available in Pest tests.
 
 ## Support us
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/pest-plugin-snapshots.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/pest-plugin-snapshots)
+[<img src="https://spatie.be/github-ad-image/pest-plugin-snapshots.jpg" width="419px" />](https://spatie.be/github-ad-click/pest-plugin-snapshots)
 
 We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
 
